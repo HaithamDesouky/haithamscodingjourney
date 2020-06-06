@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="icon-container">
+               <img src="http://openweathermap.org/img/wn/04d@2x.png">
+            </div>
+        </div>
+
+<div class="content">
+    <div class="general-information">
+    <div class="status">
+    <div class="location">
+            Enter Your Location!
+    </div>
+    <div class="detail-section">
+        <div class="detail">
+
+            <div class="title">Wind</div>
+            <div class="wind"class="value">TBD</div>
+        </div>
+
+        <div class="detail bordered">
+
+            <div class="title">Temperature</div>
+            <div class="temp" class="value">TBD</div>
+        </div>
+
+        <div class="detail">
+
+            <div class="title">Feels like</div>
+            <div class="feelslike-val" class="value">TBD</div>
+        </div>
+    </div>
+    </div>
+        <div class="city-search-container">
+            <form  class="city-search" action="/" method="post">
+                <label for="cityInput">City: </label>
+                <input  class="inputValue" type="text" name="inputValue" placeholder="Enter your location">
+                
+                <label for="unitInput">Unit</label>
+                <select name="unit" class="unitInput">
+                <option value="metric">Celcius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="imperial"> Fahrenheit</option>
+                
+                </select>
+                
+                <button id="button" type="submit">Go!</button>
+                 </form>   
+        </div>
+
+    </div>
+</div>
+ 
+
+</div>
+
+<script src="primitive.js"></script>
+</body>
+</html>
